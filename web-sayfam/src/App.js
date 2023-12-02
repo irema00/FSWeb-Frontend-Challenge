@@ -10,7 +10,6 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <DataProvider>
-      <div>APP </div>
       <Hero />
       <Skills />
       <Projects />
