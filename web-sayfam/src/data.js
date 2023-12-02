@@ -3,7 +3,7 @@ const data = {
   header: "I am a Frontend Developer",
   imageURL: "https://picsum.photos/200",
   description:
-    "I am a Frontend Developer who likes to craft solid and scalable frontend products with great user experiences",
+    "... who likes to craft solid and scalable frontend products with great user experiences",
   links: ["Github", " Linkedin"],
   basicInformation: {
     birthDate: "24.03.1996",
