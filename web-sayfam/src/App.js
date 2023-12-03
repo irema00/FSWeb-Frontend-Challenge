@@ -6,9 +6,11 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 function App() {
   return (
+    <LanguageProvider>
     <DataProvider>
       <Hero />
       <Skills />
@@ -16,6 +18,7 @@ function App() {
       <Profile />
       <Contact />
     </DataProvider>
+    </LanguageProvider>
   );
 }
 
