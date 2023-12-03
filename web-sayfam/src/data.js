@@ -1,4 +1,4 @@
-const data = {
+export const engData = {
   name: "almila",
   header: "I am a Frontend Developer",
   imageURL: "https://picsum.photos/200",
