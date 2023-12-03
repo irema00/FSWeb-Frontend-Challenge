@@ -93,3 +93,18 @@ Default/white
 
 }
 
+
+/*Profile*/
+.profile-container{ 
+  background-color:#4731D3;
+  color: #FFFFFF;
+
+}
+
+.profile-container h2{
+  color:#CBF281;
+}
+
+.profile-container strong{
+  color:#CBF281;
+}
