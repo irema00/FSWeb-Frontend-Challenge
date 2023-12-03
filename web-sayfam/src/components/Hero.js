@@ -9,10 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
-  const { postData, loading, error } = useContext(DataContext);
-
-  const { description, imageURL, header, links } = postData;
-
+  const { language } = useContext(LanguageContext);
+  useEffect(() => {
+    const dataToSend = language === "en" ? engData : trData;
+    setPostData(dataToSend);
+  }, [language, setPostData]);
   return (
     <div>
       <Header />
