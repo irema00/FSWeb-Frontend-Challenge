@@ -8,7 +8,16 @@ const Skills = () => {
     <div>
       <h2>Skills</h2>
       <ul>
-        {skills && skills.map((skill, index) => <li key={index}>{skill}</li>)}
+          {skills &&
+            Object.entries(skills).map(([skillName, skillImage], index) => (
+              <li key={index}>
+                <img
+                  src={skillImage}
+                  alt={skillName}
+                  style={{ width: "50px", height: "50px", marginRight: "10px" }}
+                />
+                {skillName}
+              </li>
       </ul>
     </div>
   );
