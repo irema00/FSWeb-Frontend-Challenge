@@ -36,6 +36,11 @@ const Hero = () => {
                   </button>
                 </div>
               ))}
+
+        <div className="hero-right">
+          {" "}
+          <img src={heroRight} />
+        </div>
           </div>
     </div>
   );
