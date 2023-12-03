@@ -3,7 +3,7 @@ import { DataContext } from "../contexts/DataContext";
 
 const Profile = () => {
   const { postData, loading, error } = useContext(DataContext);
-  const { basicInformation, imageURL, aboutMe } = postData;
+  const { basicInformation, informationTitles, profileImg, aboutMe } = postData;
 
   const informationTitles = [
     { key: "birthDate", title: "Doğum Tarihi" },
