@@ -15,7 +15,7 @@ const Profile = () => {
     <div>
       <div>
         <h3>Basic Information</h3>
-        {basicInformation && (
+        {basicInformation && informationTitles && (
           <div>
             {informationTitles.map(({ key, title }) => (
               <div key={key}>
