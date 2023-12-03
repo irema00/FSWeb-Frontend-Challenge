@@ -5,9 +5,10 @@ const Skills = () => {
   const { postData } = useContext(DataContext);
   const { skills } = postData;
   return (
-    <div>
-      <h2>Skills</h2>
-      <ul>
+    <div className="skills-container">
+      <h2>Skills</h2>{" "}
+      <div className="skill-box">
+        <ul>
           {skills &&
             Object.entries(skills).map(([skillName, skillImage], index) => (
               <li key={index}>
@@ -18,7 +19,9 @@ const Skills = () => {
                 />
                 {skillName}
               </li>
-      </ul>
+            ))}
+        </ul>
+      </div>
     </div>
   );
 };
