@@ -1,6 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { DataContext } from "../contexts/DataContext";
 import Header from "./Header";
+import LanguageSwitch from "./LanguageSwitch";
+import { LanguageContext } from "../contexts/LanguageContext";
+import { engData, trData } from "../data";
+import "../App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   const { postData, loading, error } = useContext(DataContext);
