@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 import api from "../services/api";
-import data from "../data";
+import { engData } from "../data";
 
 export const DataContext = createContext();
 
@@ -15,10 +15,10 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     api
-      .post("/posts", data)
+      .post("/posts", engData)
       .then((res) => {
         console.log(res);
-        setPostData(data);
+        setPostData(engData);
       })
       .catch((err) => {
         setError(err);
@@ -26,7 +26,7 @@ export const DataProvider = ({ children }) => {
   }, []);
 
   return (
-    <DataContext.Provider value={{ postData, loading, error }}>
+    <DataContext.Provider value={{ postData, setPostData, loading, error }}>
       {children}
     </DataContext.Provider>
   );
