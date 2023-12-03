@@ -11,6 +11,12 @@ export const engData = {
     education: "Hacettepe Ünv, Biyoloji Lisans,2016",
     preferredRole: "Frontend, UI",
   },
+  informationTitles: [
+    { key: "birthDate", title: "Date of Birth" },
+    { key: "city", title: "City of Residence" },
+    { key: "education", title: "Education" },
+    { key: "preferredRole", title: "Preferred Role" },
+  ],
   aboutMe: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan, nisi in vehicula varius, eros leo fermentum orci, ac tincidunt ipsum magna eu nulla. Mauris ut molestie nisl, eget pulvinar tellus. Nulla tincidunt ornare massa, non pellentesque libero venenatis pretium. Morbi eu lectus semper, fringilla metus a, sagittis mauris. ",
     "Phasellus tristique lacus neque, laoreet fermentum metus maximus luctus. Donec rutrum tellus vel augue tincidunt fringilla. Donec faucibus lacus in justo vulputate imperdiet. Proin tristique malesuada lectus sed semper. Suspendisse potenti. ",
