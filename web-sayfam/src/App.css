@@ -108,3 +108,13 @@ Default/white
 .profile-container strong{
   color:#CBF281;
 }
+/*Projects*/
+.projects-container{
+  background-color:#CBF281;
+}
+.projects-container h2, h3{
+  color:#4731D3;
+}
+.project-box{
+  background-color:#FFFFFF;
+}
