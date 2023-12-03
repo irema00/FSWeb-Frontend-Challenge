@@ -17,10 +17,12 @@ const Hero = () => {
     setPostData(dataToSend);
   }, [language, setPostData]);
   return (
-    <div>
-      <Header />
-      <h1>{header}</h1>
-      <p>{description}</p>
+    <div className="hero">
+      <Header /> <LanguageSwitch /> <div>Dark Mode / Light Mode</div>
+      <div className="hero-content">
+        <div className="hero-left">
+          <h1>{header}</h1>
+          <p>{description}</p>
           <div className="hero-btn">
             {links &&
               links.map((link, index) => (
@@ -36,12 +38,14 @@ const Hero = () => {
                   </button>
                 </div>
               ))}
+          </div>
+        </div>
 
         <div className="hero-right">
           {" "}
           <img src={heroRight} />
         </div>
-          </div>
+      </div>
     </div>
   );
 };
