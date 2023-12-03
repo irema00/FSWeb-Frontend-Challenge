@@ -18,10 +18,22 @@ const Hero = () => {
       <Header />
       <h1>{header}</h1>
       <p>{description}</p>
-      <img src={imageURL} />
-      {/* //maplenecek// */}
-      <p>{links[0]}</p>
-      <p>{links[1]}</p>
+          <div className="hero-btn">
+            {links &&
+              links.map((link, index) => (
+                <div key={index}>
+                  <button className="btn">
+                    {index % 2 === 0 ? (
+                      <FontAwesomeIcon icon={faGithub} size="2x" />
+                    ) : (
+                      <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                    )}
+
+                    <p>{link}</p>
+                  </button>
+                </div>
+              ))}
+          </div>
     </div>
   );
 };
