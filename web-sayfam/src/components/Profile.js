@@ -5,12 +5,6 @@ const Profile = () => {
   const { postData, loading, error } = useContext(DataContext);
   const { basicInformation, informationTitles, profileImg, aboutMe } = postData;
 
-  const informationTitles = [
-    { key: "birthDate", title: "Doğum Tarihi" },
-    { key: "city", title: "İkamet Şehri" },
-    { key: "education", title: "Eğitim Durumu" },
-    { key: "preferredRole", title: "Tercih Ettiği Rol" },
-  ];
   return (
     <div className="profile-container">
       <h2>Profile</h2>
