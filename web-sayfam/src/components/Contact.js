@@ -16,6 +16,7 @@ const Contact = () => {
       <h3>{contact.title}</h3>
       <p>{contact.text}</p>
       <p> {contact.email}</p>
+      <div className="socials">
         <FontAwesomeIcon icon={faTwitter} />
         <FontAwesomeIcon icon={faCodepen} />
         <FontAwesomeIcon icon={faAt} />
