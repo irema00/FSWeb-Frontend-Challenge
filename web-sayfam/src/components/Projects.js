@@ -9,7 +9,7 @@ const Projects = () => {
       {projects &&
         projects.map((project, index) => (
           <div key={index}>
-            <h4>{project}</h4>
+              <h3>{project}</h3>
             <p>{projectsText && projectsText[index]}</p>
               <img src={projectsImg && projectsImg[index]} />
           </div>
