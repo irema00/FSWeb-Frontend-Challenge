@@ -12,7 +12,7 @@ const Contact = () => {
   const { postData } = useContext(DataContext);
   const { contact } = postData;
   return (
-    <div>
+    <div className="contact-container">
       <h3>{contact.title}</h3>
       <p>{contact.text}</p>
       <p> {contact.email}</p>
@@ -21,6 +21,7 @@ const Contact = () => {
         <FontAwesomeIcon icon={faCodepen} />
         <FontAwesomeIcon icon={faAt} />
         <FontAwesomeIcon icon={faInstagram} />
+      </div>
     </div>
   );
 };
