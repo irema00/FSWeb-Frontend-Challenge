@@ -12,8 +12,9 @@ const Profile = () => {
     { key: "preferredRole", title: "Tercih Ettiği Rol" },
   ];
   return (
-    <div>
-      <div>
+    <div className="profile-container">
+      <h2>Profile</h2>
+      <div className="profile-box">
         <h3>Basic Information</h3>
         {basicInformation && informationTitles && (
           <div>
@@ -25,10 +26,10 @@ const Profile = () => {
           </div>
         )}
       </div>
-      <div>
-        <img src={imageURL} />
+      <div className="profile-box">
+        <img src={profileImg} />
       </div>
-      <div>
+      <div className="profile-box">
         <h3>About Me</h3>
         {aboutMe &&
           aboutMe.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
