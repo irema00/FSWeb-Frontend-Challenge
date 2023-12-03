@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DataContext } from "../contexts/DataContext";
 const Projects = () => {
   const { postData, loading, error } = useContext(DataContext);
-  const { projects, projectsText } = postData;
+  const { projects, projectsText, projectsImg } = postData;
   return (
     <div>
       <h2>Projects</h2>
@@ -11,6 +11,7 @@ const Projects = () => {
           <div key={index}>
             <h4>{project}</h4>
             <p>{projectsText && projectsText[index]}</p>
+              <img src={projectsImg && projectsImg[index]} />
           </div>
         ))}
     </div>
