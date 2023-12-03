@@ -11,13 +11,13 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 function App() {
   return (
     <LanguageProvider>
-    <DataProvider>
-      <Hero />
-      <Skills />
-      <Projects />
-      <Profile />
-      <Contact />
-    </DataProvider>
+      <DataProvider>
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Contact />
+      </DataProvider>
     </LanguageProvider>
   );
 }
