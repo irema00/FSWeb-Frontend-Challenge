@@ -17,9 +17,11 @@ export const LanguageProvider = ({ children }) => {
   const toggleLanguage = () => {
     setLanguage((lang) => (lang === "en" ? "tr" : "en"));
   };
+
   useEffect(() => {
     localStorage.setItem("language", language);
   }, [language]);
+
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>
       {children}
