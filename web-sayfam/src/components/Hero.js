@@ -26,13 +26,13 @@ const Hero = () => {
 
   return (
     <div
-      className={`hero-container flex flex-wrap-reverse sm:no-wrap justify-center m-auto ${
+      className={`flex flex-wrap-reverse sm:no-wrap justify-center m-auto ${
         theme === "dark" ? "bg-[#171043]" : "bg-[#4731D3]"
       }`}
     >
       <div className="sm:w-2/3 sm:pl-[15%] sm:pb-20 sm:pt-12 sm:relative ">
-        <div className="hero-header flex flex-col justify-center h-auto ">
-          <div className="header-right  flex flex-row items-end  content-center justify-around sm:justify-end sm:pl-[55%] sm:pr-[5%]">
+        <div className=" flex flex-col justify-center h-auto ">
+          <div className="flex flex-row items  sm:items-end  sm: content-center  justify-around sm:justify-end sm:pl-[55%] sm:pr-[5%]">
             <LanguageSwitch />
           </div>
           <div className="header-left flex justify-center sm:justify-start">
@@ -41,14 +41,14 @@ const Hero = () => {
         </div>
         <div className="hero-container flex flex-col py-[0] justify-center m-auto">
           <div className="flex flex-wrap-reverse sm:flex-nowrap sm:flex-row ">
-            <div className="hero-left mb-8 md:mb-0 md:w-1/2 ">
-              <h1 className="font-bold text-[3rem] leading-[59.4px] text-[#CBF281] mx-12 sm:ml-0 sm:mt-20 text-left mb-8">
+            <div className="hero-left mb-8 md:mb-0 md:w-1/2 min-w-[600px]">
+              <h1 className="font-semibold text-5xl leading-[59.4px] text-[#CBF281] mx-12 sm:ml-0 sm:mt-20 text-left mb-8">
                 {header}
               </h1>
-              <p className="font-normal text-[24px] mx-12 sm:ml-0 leading-[30px] text-[#FFFFFF] text-left">
+              <p className="font-light text-[24px]  sm:ml-0 text-[#FFFFFF] text-left">
                 {description}
               </p>
-              <div className="hero-btn flex items-center justify-center sm:justify-start mt-6 flex-row gap-2 md:space-x-4">
+              <div className="hero-btn flex items-center justify-center sm:justify-start flex-row gap-2 md:space-x-4">
                 {links &&
                   links.map((link, index) => (
                     <div key={index}>
