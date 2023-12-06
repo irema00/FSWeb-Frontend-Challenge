@@ -1,6 +1,6 @@
 export const engData = {
   name: "almila",
-  header: "I am a Frontend Developer",
+  header: "I am a Frontend Developer...",
   heroRight: "/images/hero-right.png",
   description:
     "... who likes to craft solid and scalable frontend products with great user experiences",
@@ -18,8 +18,7 @@ export const engData = {
     { key: "preferredRole", title: "Preferred Role" },
   ],
   aboutMe: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan, nisi in vehicula varius, eros leo fermentum orci, ac tincidunt ipsum magna eu nulla. Mauris ut molestie nisl, eget pulvinar tellus. Nulla tincidunt ornare massa, non pellentesque libero venenatis pretium. Morbi eu lectus semper, fringilla metus a, sagittis mauris. ",
-    "Phasellus tristique lacus neque, laoreet fermentum metus maximus luctus. Donec rutrum tellus vel augue tincidunt fringilla. Donec faucibus lacus in justo vulputate imperdiet. Proin tristique malesuada lectus sed semper. Suspendisse potenti. ",
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
   ],
   profileImg: "/images/profile.png",
   skills: {
@@ -33,8 +32,8 @@ export const engData = {
 
   projects: ["Workintech", "Journey"],
   projectsText: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque ante, lobortis vitae tincidunt in, volutpat quis lacus. Sed sollicitudin nisi elit, vel auctor est cursus non. Quisque eu efficitur felis. Cras nisl ligula, tincidunt nec nulla nec, ultrices fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit arcu. Nullam nec tellus vitae erat iaculis varius ut eu libero. Nam lectus massa, malesuada in dignissim eu, semper a ipsum. ",
-    "Cras quis tortor in velit porta ultricies sed ut arcu. Proin volutpat nisl sapien, eget elementum nibh imperdiet et. Maecenas mi mi, maximus quis velit et, eleifend hendrerit nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel elementum eros. Donec risus mauris, scelerisque et purus maximus, ultrices sodales nibh. Vestibulum aliquet, tortor eu sagittis varius, metus nulla finibus nulla, quis pulvinar diam dui vel nisl. ",
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. ",
   ],
   projectsImg: ["/images/Rectangle1.png", "/images/Rectangle2.png"],
 
@@ -47,7 +46,7 @@ export const engData = {
 
 export const trData = {
   name: "almila",
-  header: "Ben bir Frontend Geliştiricisiyim",
+  header: "Ben bir Frontend Geliştiricisiyim...",
   heroRight: "/images/hero-right.png",
   description:
     "... mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı severim",
@@ -65,8 +64,7 @@ export const trData = {
     { key: "preferredRole", title: "Tercih Ettiği Rol" },
   ],
   aboutMe: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan, nisi in vehicula varius, eros leo fermentum orci, ac tincidunt ipsum magna eu nulla. Mauris ut molestie nisl, eget pulvinar tellus. Nulla tincidunt ornare massa, non pellentesque libero venenatis pretium. Morbi eu lectus semper, fringilla metus a, sagittis mauris. ",
-    "Phasellus tristique lacus neque, laoreet fermentum metus maximus luctus. Donec rutrum tellus vel augue tincidunt fringilla. Donec faucibus lacus in justo vulputate imperdiet. Proin tristique malesuada lectus sed semper. Suspendisse potenti. ",
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
   ],
   profileImg: "/images/profile.png",
   skills: {
@@ -80,8 +78,9 @@ export const trData = {
 
   projects: ["Workintech", "Journey"],
   projectsText: [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In neque ante, lobortis vitae tincidunt in, volutpat quis lacus. Sed sollicitudin nisi elit, vel auctor est cursus non. Quisque eu efficitur felis. Cras nisl ligula, tincidunt nec nulla nec, ultrices fringilla nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac suscipit arcu. Nullam nec tellus vitae erat iaculis varius ut eu libero. Nam lectus massa, malesuada in dignissim eu, semper a ipsum. ",
-    "Cras quis tortor in velit porta ultricies sed ut arcu. Proin volutpat nisl sapien, eget elementum nibh imperdiet et. Maecenas mi mi, maximus quis velit et, eleifend hendrerit nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel elementum eros. Donec risus mauris, scelerisque et purus maximus, ultrices sodales nibh. Vestibulum aliquet, tortor eu sagittis varius, metus nulla finibus nulla, quis pulvinar diam dui vel nisl. ",
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+  ],
   ],
   projectsImg: ["/images/Rectangle1.png", "/images/Rectangle2.png"],
   contact: {
