@@ -14,22 +14,22 @@ const LanguageSwitch = () => {
   };
 
   return (
-    <span classname="lang-switch" onClick={toggleLanguage}>
+    <span className="lang-switch" onClick={toggleLanguage}>
       {language === "en" ? (
         <>
-          <span classname="lang-switch-text1" style={style1}>
+          <span className="lang-switch-text1" style={style1}>
             TÜRKÇE
           </span>
-          <span classname="lang-switch-text2" style={style2}>
+          <span className="lang-switch-text2" style={style2}>
             'YE GEÇ
           </span>
         </>
       ) : (
         <>
-          <span classname="lang-switch-text2" style={style2}>
+          <span className="lang-switch-text2" style={style2}>
             SWITCH TO
           </span>
-          <span classname="lang-switch-text1" style={style1}>
+          <span className="lang-switch-text1" style={style1}>
             <span> ENGLISH</span>
           </span>
         </>
