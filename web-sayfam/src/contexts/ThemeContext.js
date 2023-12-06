@@ -8,8 +8,12 @@ export function useTheme() {
 }
 
 export function ThemeProvider({ children }) {
+  const systemPreferenceDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
   const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+    localStorage.getItem("theme") || (systemPreferenceDark ? "dark" : "light")
   );
 
   const toggleTheme = () => {
