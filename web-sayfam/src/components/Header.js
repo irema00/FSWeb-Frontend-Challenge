@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import { DataContext } from "../contexts/DataContext";
+import React from "react";
+import { useData } from "../contexts/DataContext";
 
 export default function Header() {
-  const { postData } = useContext(DataContext);
+  const { postData } = useData();
 
   const { name } = postData;
   return (
-    <div>
-      <h3>{name}</h3>
+    <div className="header">
+      <h3 className="text-[#CBF281] text-[2rem] mt-8 ">{name}</h3>
     </div>
   );
 }
