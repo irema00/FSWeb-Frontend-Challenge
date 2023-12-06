@@ -7,7 +7,9 @@ export default function Header() {
   const { name } = postData;
   return (
     <div className="header">
-      <h3 className="text-[#CBF281] text-[2rem] mt-8 ">{name}</h3>
+      <h3 className="text-[#CBF281] font-semibold text-4xl leading-5  ">
+        {name}
+      </h3>
     </div>
   );
 }
