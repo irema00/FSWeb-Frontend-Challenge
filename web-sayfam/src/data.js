@@ -1,10 +1,17 @@
 export const engData = {
+  pages: {
+    profile: "Profile",
+    skills: "Skills",
+    projects: "Projects",
+  },
   name: "almila",
   header: "I am a Frontend Developer...",
   heroRight: "/images/hero-right.svg",
   description:
     "... who likes to craft solid and scalable frontend products with great user experiences",
   links: ["Github", " Linkedin"],
+  profileTitle1: "Basic Information",
+  profileTitle2: "About Me",
   basicInformation: {
     birthDate: "24.03.1996",
     city: "Ankara",
@@ -18,15 +25,15 @@ export const engData = {
     { key: "preferredRole", title: "Preferred Role" },
   ],
   aboutMe: [
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    "I'm a passionate software developer who enjoys coding and has a deep love for technology. I relish learning new skills to craft creative solutions. I'm always ready for any coding challenge.",
   ],
   profileImg: "/images/profile.png",
   skills: {
     JAVASCRIPT: "/images/js.svg",
-    REACT: "/images/react.svg",
-    REDUX: "/images/redux.svg",
     NODE: "/images/nodejs.svg",
+    REACT: "/images/react.svg",
     VSCODE: "/images/VScode.svg",
+    REDUX: "/images/redux.svg",
     FIGMA: "/images/figma.svg",
   },
 
@@ -55,6 +62,11 @@ export const engData = {
 };
 
 export const trData = {
+  pages: {
+    profile: "Profil",
+    skills: "Skills",
+    projects: "Projeler",
+  },
   name: "almila",
   header: "Ben bir Frontend Geliştiricisiyim...",
   heroRight: "/images/hero-right.svg",
@@ -67,6 +79,8 @@ export const trData = {
     education: "Hacettepe Ünv, Biyoloji Lisans,2016",
     preferredRole: "Frontend, UI",
   },
+  profileTitle1: "Temel Bilgiler",
+  profileTitle2: "Hakkımda",
   informationTitles: [
     { key: "birthDate", title: "Doğum Tarihi" },
     { key: "city", title: "İkamet Şehri" },
@@ -74,15 +88,15 @@ export const trData = {
     { key: "preferredRole", title: "Tercih Ettiği Rol" },
   ],
   aboutMe: [
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    "Kodlamayı seven, teknolojiye tutkulu bir yazılım geliştiriciyim. Yaratıcı çözümler üretmek için yeni beceriler öğrenmeyi severim. Her türlü kodlama zorluğuna hazırım.",
   ],
   profileImg: "/images/profile.png",
   skills: {
     JAVASCRIPT: "/images/js.svg",
-    REACT: "/images/react.svg",
-    REDUX: "/images/redux.svg",
     NODE: "/images/nodejs.svg",
+    REACT: "/images/react.svg",
     VSCODE: "/images/VScode.svg",
+    REDUX: "/images/redux.svg",
     FIGMA: "/images/figma.svg",
   },
 
