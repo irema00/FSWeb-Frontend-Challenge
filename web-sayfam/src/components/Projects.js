@@ -1,18 +1,33 @@
 import React from "react";
 import { useData } from "../contexts/DataContext";
 import { useTheme } from "../contexts/ThemeContext";
+/*dark mode  inbox bg: 
+#2B2727 title: 
+#C1BAED
+text #FFFFFF*/
 
 const Projects = () => {
   const { postData } = useData();
-  const { projects, projectsText, projectsImg, pills, projectLinks } = postData;
+  const { projects, projectsText, projectsImg, pills, projectLinks, pages } =
+    postData;
   const { theme } = useTheme();
 
   return (
-    <div className="bg-[#CBF281]">
+    <div
+      className={`${
+        theme === "dark"
+          ? "bg-[#1A210B] text-[#FFFFFF]"
+          : "bg-[#CBF281] text-[#383838]"
+      }`}
+    >
       <div>
         <div className="ml-[15%] pt-16 pb-8">
-          <h2 className="text-[48px] sm:text-start  text-[#4731D3] font-bold">
-            Projects
+          <h2
+            className={`text-[48px] sm:text-start  text-[#4731D3] font-bold  ${
+              theme === "dark" ? "text-[#CBF281]" : "text-[#4731D3]"
+            }`}
+          >
+            {pages?.projects}
           </h2>
         </div>
         <div className="ml-[15%] mr-[10%] flex flex-wrap gap-12 pb-20">
@@ -20,17 +35,33 @@ const Projects = () => {
             projects.map((project, index) => (
               <div
                 key={index}
-                className=" bg-white justify-center sm:rounded-2xl sm:flex"
+                className={`bg-white justify-center sm:rounded-2xl sm:flex ${
+                  theme === "dark"
+                    ? "text-[#FFFFFF] bg-[#2B2727]"
+                    : "text-[#4731D3] bg-[#FFFFFF]"
+                }`}
               >
                 <img src={projectsImg[index]} alt={`Project ${index + 1}`} />
-                <div>
-                  <h3 className="text-[32px] text-[#4731D3] font-bold sm:ml-12 mt-12 sm:text-start text-center">
+                <div
+                  className={`sm:ml-12 mt-8 text-[#383838] text-xl sm:m-3 sm:text-start text-center sm:mr-12${
+                    theme === "dark" ? "bg-[#CBF281]" : "bg-[#4731D3]"
+                  }`}
+                >
+                  <h3
+                    className={`text-[32px]  font-bold sm:ml-6 mt-12 sm:text-start sm:mb-6 text-center ${
+                      theme === "dark" ? "text-[#C1BAED]" : "text-[#4731D3]"
+                    }`}
+                  >
                     {project}
                   </h3>
-                  <p className="sm:ml-12 mt-8 text-[#383838] text-xl sm:m-3 sm:text-start text-center sm:mr-12">
+                  <p
+                    className={`sm:ml-6 mt-8 text-[#383838] font-[200] text-xl sm:m-3 sm:text-start text-center sm:mr-12 ${
+                      theme === "dark" ? "text-[#FFFFFF]" : "text-[#4731D3]"
+                    }`}
+                  >
                     {projectsText[index]}
                   </p>
-                  <div className="pill flex flex-wrap flex-row sm:m-[15px] sm:justify-start justify-center my-[10px] sm:ml-12">
+                  <div className="pill flex flex-wrap flex-row sm:m-[15px] sm:justify-start justify-center font-thin text-base  text-center font my-[10px] sm:ml-6">
                     {pills &&
                       pills.map((pill, index) => (
                         <p
@@ -45,7 +76,7 @@ const Projects = () => {
                         </p>
                       ))}
                   </div>
-                  <div className="project-links sm:text-start sm:ml-12 my-[20px]">
+                  <div className="project-links sm:text-start sm:mt-6  sm:ml-6 my-[20px]">
                     {projectLinks &&
                       projectLinks.map((link, index) => (
                         <a
@@ -53,7 +84,7 @@ const Projects = () => {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`underline mr-3 ${
+                          className={`underline font-thin mr-9 ${
                             theme === "dark"
                               ? "text-[#CBF281]"
                               : "text-[#120B39]"
