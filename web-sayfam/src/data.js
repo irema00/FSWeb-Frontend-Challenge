@@ -1,7 +1,7 @@
 export const engData = {
   name: "almila",
   header: "I am a Frontend Developer...",
-  heroRight: "/images/hero-right.png",
+  heroRight: "/images/hero-right.svg",
   description:
     "... who likes to craft solid and scalable frontend products with great user experiences",
   links: ["Github", " Linkedin"],
@@ -57,7 +57,7 @@ export const engData = {
 export const trData = {
   name: "almila",
   header: "Ben bir Frontend Geliştiricisiyim...",
-  heroRight: "/images/hero-right.png",
+  heroRight: "/images/hero-right.svg",
   description:
     "... mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı severim",
   links: ["Github", " Linkedin"],
