@@ -35,7 +35,7 @@ export const engData = {
     "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
     "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. ",
   ],
-  projectsImg: ["/images/Rectangle1.png", "/images/Rectangle2.png"],
+  projectsImg: ["/images/Rectangle1.png", "/images/Rectangle41.png"],
   pills: ["react", "redux", "vercel"],
   projectLinks: [
     {
@@ -102,7 +102,7 @@ export const trData = {
       url: "https://github.com/irema00",
     },
   ],
-  projectsImg: ["/images/Rectangle1.png", "/images/Rectangle2.png"],
+  projectsImg: ["/images/Rectangle1.png", "/images/Rectangle41.png"],
   contact: {
     title: "Bana bir mesaj gönder!",
     text: "Bir sorunuz veya teklifiniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin.",
