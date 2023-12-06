@@ -36,7 +36,17 @@ export const engData = {
     "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible. ",
   ],
   projectsImg: ["/images/Rectangle1.png", "/images/Rectangle2.png"],
-
+  pills: ["react", "redux", "vercel"],
+  projectLinks: [
+    {
+      label: "Visit Site",
+      url: "https://github.com/irema00",
+    },
+    {
+      label: "Github",
+      url: "https://github.com/irema00",
+    },
+  ],
   contact: {
     title: "Send me a message!",
     text: "Got a question or proposal, or just want to say hello? Go ahead.",
