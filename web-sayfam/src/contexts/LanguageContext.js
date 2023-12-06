@@ -5,8 +5,14 @@ export const LanguageContext = createContext();
 export const useLanguage = () => useContext(LanguageContext);
 
 export const LanguageProvider = ({ children }) => {
+  const userLanguage =
+    navigator.language ||
+    (navigator.languages && navigator.languages[0]) ||
+    "en";
+  const isTurkish = userLanguage.startsWith("tr");
+
   const [language, setLanguage] = useState(
-    localStorage.getItem("language") ? localStorage.getItem("language") : "en"
+    localStorage.getItem("language") || (isTurkish ? "tr" : "en")
   );
   const toggleLanguage = () => {
     setLanguage((lang) => (lang === "en" ? "tr" : "en"));
