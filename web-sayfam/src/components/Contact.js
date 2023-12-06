@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { DataContext } from "../contexts/DataContext";
+import { useData } from "../contexts/DataContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -9,18 +8,11 @@ import {
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
-  const { postData } = useContext(DataContext);
+  const { postData } = useData();
   const { contact } = postData;
   return (
-    <div className="contact-container">
-      <h3>{contact.title}</h3>
-      <p>{contact.text}</p>
-      <p> {contact.email}</p>
-      <div className="socials">
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faCodepen} />
-        <FontAwesomeIcon icon={faAt} />
-        <FontAwesomeIcon icon={faInstagram} />
+        <h3 className="text-[48px] font-bold">{contact.title}</h3>
+        <p className="pt-10 text-xl underline">{contact.email}</p>
       </div>
     </div>
   );
