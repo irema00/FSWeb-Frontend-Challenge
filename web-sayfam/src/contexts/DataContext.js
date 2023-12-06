@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 import api from "../services/api";
 import { engData } from "../data";
+import { toast } from "react-toastify";
 
 export const DataContext = createContext();
 
@@ -19,9 +20,17 @@ export const DataProvider = ({ children }) => {
       .then((res) => {
         console.log(res);
         setPostData(engData);
+        toast.success("Veriler başarıyla yüklendi", {
+          position: "bottom-right",
+          autoClose: 2000,
+        });
       })
       .catch((err) => {
         setError(err);
+        toast.error("Veriler yüklenirken bir hata oluştu", {
+          position: "bottom-right",
+          autoClose: 2000,
+        });
       });
   }, []);
 
