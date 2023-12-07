@@ -5,7 +5,7 @@ function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="flex items-baseline gap-2 w-[200px] mt-0 justify-center ">
+    <div className="flex items-baseline gap-2 w-[200px] mt-0 sm:justify-center ">
       <div
         className={`tdnn ${theme === "light" ? "day" : ""}`}
         onClick={toggleTheme}
