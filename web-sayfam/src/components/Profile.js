@@ -35,7 +35,7 @@ const Profile = () => {
       </div>
       <div className="flex justify-center items-center sm:items-start flex-col sm:flex-row text-left flex-wrap sm:no-wrap mt-5">
         <div className="sm:w-1/3 sm:text-2xl">
-          <h3 className="sm:text-4xl  text-center ms:text-left text-3xl mt-12">
+          <h3 className="sm:text-4xl  text-center sm:text-left text-3xl mt-12">
             {profileTitle1}
           </h3>
           {basicInformation &&
