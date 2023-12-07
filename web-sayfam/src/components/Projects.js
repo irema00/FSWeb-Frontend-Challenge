@@ -1,10 +1,6 @@
 import React from "react";
 import { useData } from "../contexts/DataContext";
 import { useTheme } from "../contexts/ThemeContext";
-/*dark mode  inbox bg: 
-#2B2727 title: 
-#C1BAED
-text #FFFFFF*/
 
 const Projects = () => {
   const { postData } = useData();
@@ -23,14 +19,14 @@ const Projects = () => {
       <div>
         <div className="ml-[15%] pt-16 pb-8">
           <h2
-            className={`text-[48px] sm:text-start  text-[#4731D3] font-bold  ${
+            className={`text-[48px] sm:text-start   text-[#4731D3] font-bold  ${
               theme === "dark" ? "text-[#CBF281]" : "text-[#4731D3]"
             }`}
           >
             {pages?.projects}
           </h2>
         </div>
-        <div className="ml-[15%] mr-[10%] flex flex-wrap gap-12 pb-20">
+        <div className="ml-[15%] mr-[10%] flex flex-wrap sm:gap-12 pb-20">
           {projects &&
             projects.map((project, index) => (
               <div
@@ -41,7 +37,11 @@ const Projects = () => {
                     : "text-[#4731D3] bg-[#FFFFFF]"
                 }`}
               >
-                <img src={projectsImg[index]} alt={`Project ${index + 1}`} />
+                <img
+                  className="w-[100%] rounded-r-xl sm:rounded-r-none "
+                  src={projectsImg[index]}
+                  alt={`Project ${index + 1}`}
+                />
                 <div
                   className={`sm:ml-12 mt-8 text-[#383838] text-xl sm:m-3 sm:text-start text-center sm:mr-12${
                     theme === "dark" ? "bg-[#CBF281]" : "bg-[#4731D3]"
@@ -55,13 +55,15 @@ const Projects = () => {
                     {project}
                   </h3>
                   <p
-                    className={`sm:ml-6 mt-8 text-[#383838] font-[200] text-xl sm:m-3 sm:text-start text-center sm:mr-12 ${
-                      theme === "dark" ? "text-[#FFFFFF]" : "text-[#4731D3]"
+                    className={`sm:ml-6 mt-8 px-4  sm:px-0 text-[#383838] font-[400] text-xl sm:m-3 sm:text-start text-center sm:mr-12 mb-5 ${
+                      theme === "dark"
+                        ? "text-[#FFFFFF]"
+                        : "text-                  [#383838]"
                     }`}
                   >
                     {projectsText[index]}
                   </p>
-                  <div className="pill flex flex-wrap flex-row sm:m-[15px] sm:justify-start justify-center font-thin text-base  text-center font my-[10px] sm:ml-6">
+                  <div className="pill flex flex-wrap flex-row sm:m-[15px] sm:justify-start justify-center font-thin text-base gap-5 sm:gap-0 text-center font my-[10px] sm:ml-6">
                     {pills &&
                       pills.map((pill, index) => (
                         <p
@@ -84,7 +86,7 @@ const Projects = () => {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`underline font-thin mr-9 ${
+                          className={`underline font-normal mr-9 ${
                             theme === "dark"
                               ? "text-[#CBF281]"
                               : "text-[#120B39]"
