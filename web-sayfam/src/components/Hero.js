@@ -1,5 +1,5 @@
 import "../App.css";
-import React, { useEffect } from "react";
+import React from "react";
 
 import Header from "./Header";
 import LanguageSwitch from "../utils/LanguageSwitch";
@@ -10,19 +10,11 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { useData } from "../contexts/DataContext";
 import { useTheme } from "../contexts/ThemeContext";
-import { useLanguage } from "../contexts/LanguageContext";
-import { engData, trData } from "../data";
 
 const Hero = () => {
-  const { postData, setPostData } = useData();
+  const { postData } = useData();
   const { description, heroRight, header, links } = postData;
   const { theme } = useTheme();
-  const { language } = useLanguage();
-
-  useEffect(() => {
-    const dataToSend = language === "en" ? engData : trData;
-    setPostData(dataToSend);
-  }, [language, setPostData]);
 
   return (
     <div
@@ -79,14 +71,18 @@ const Hero = () => {
               </div>
             </div>
             <img
-              className="hero-right max-w-full h-auto sm:absolute top-[100px] -right-[260px]"
+              className="hero-right  h-auto sm:absolute top-[100px] -right-[260px]"
               src={heroRight}
               alt="woman-working-laptop"
             />
           </div>
         </div>
       </div>
-      <div className="sm:bg-[#CBF281] sm:w-1/3 sm:pr-[20%] sm:pb-20  mb-[10px] sm:mb-0  sm:pt-6">
+      <div
+        className={`sm:w-1/3 sm:pr-[20%] sm:pb-20 mb-[10px] sm:mb-0 sm:pt-6 ${
+          theme === "light" ? "bg-[#CBF281]" : "bg-[#1A210B]"
+        }`}
+      >
         <ThemeToggle />
       </div>
     </div>
