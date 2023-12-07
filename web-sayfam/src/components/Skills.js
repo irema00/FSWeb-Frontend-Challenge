@@ -10,20 +10,19 @@ const Skills = () => {
   return (
     <div
       className={`flex sm:pl-[15%] sm:pr-[10%] sm:py-[5%] pb-8 flex-col sm:flex-row 
-      sm:items-start 
-       py-[0] sm:gap-[5%] m-auto
+      sm:items-start justify-center py-[0] sm:gap-[5%] m-auto
       ${theme === "dark" ? "bg-[#252128]" : "bg-[#FFFFFF]"}`}
     >
-      <div className="flex gap-[200px]">
+      <div className="flex flex-col items-center sm:items-start sm:mt-0 mt-[50px] mb-50px sm:flex-row sm:gap-[200px] ">
         <h2
-          className={`font-bold text-[3rem]  ${
+          className={`font-bold text-[3rem] mb-5 ${
             theme === "dark" ? "text-[#CBF281]" : "text-[#4731D3]"
           }`}
         >
           {pages?.skills}
         </h2>
-        <div className="skill-box-container flex items-start  ">
-          <ul className="flex justify-between list-none flex-wrap sm: sm:flex-wrap  flex-col sm:flex-row sm:items-start">
+        <div className="skill-box-container flex sm:items-start justify-center  ">
+          <ul className="flex sm:justify-between list-none flex-wrap sm:flex-row sm:flex-wrap  flex-col  sm:flex-row sm:items-start">
             {skills &&
               Object.entries(skills).map(([skillName, skillImage], index) => (
                 <li
