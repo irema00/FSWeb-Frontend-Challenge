@@ -53,13 +53,13 @@ const Profile = () => {
           <img className="sm:w-[350px]" src={profileImg} alt="Profile" />
         </div>
         <div className="sm:w-1/3">
-          <h3 className="sm:text-3xl px-2 sm:text-left sm:text-4xl mt-12 sm:mb-12 mb-5 sm:pl-10 text-center ">
+          <h3 className="sm:text-3xl px-2 sm:text-left sm:text-4xl mt-12 sm:mb-12 mb-5 sm:ml-3 text-center">
             {profileTitle2}
           </h3>
           {aboutMe &&
             aboutMe.map((paragraph, index) => (
               <p
-                className="mb-12 px-5 sm:pl-10  sm:text-start sm:text-2xl sm:px-2 text-center"
+                className=" w-[300px] h-[243px] ml-3 text-white text-lg font-normal font-['Inter'] leading-[27px]"
                 key={index}
               >
                 {paragraph}
